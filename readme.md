@@ -1,3 +1,16 @@
+(fork of https://github.com/cdaller/csv_anonymizer)
+
+Main changes are:
+- Anonymize different columns in same csv , e.g. 
+  ```
+  $ ./multi_anonymizer.py --header-lines 1 --delimiter "," --type=ip --input "../your/file*.csv:4,11"
+  ```
+- Added options for id, token, website, ip
+- Write anonymized file to `anonymized` directory, next to source file
+- Disabled xml anonymization
+
+---
+
 # Multi Anonymizer
 
 The main target of this script is to anonymize one value consistently in multiple files.
